@@ -26,6 +26,9 @@ h1{
     color: #fff;
     font-size: 9.5rem;
 }
+h2{
+    font-size: 3rem;
+}
 img{
     display: block;
     width: 100%;
@@ -51,6 +54,9 @@ img{
 }
 .info-user .radius h1{
     color: #000;
+}
+.aboutme h2{
+    text-align: center;
 }
 /* **MOBILE FIRS** */
 @media (min-width: 280px){
@@ -103,6 +109,18 @@ img{
     .info-user .radius h1{
         font-size: 2rem;
     }
+    /* ***ABOUT**** */
+    .info-I p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .imagenes div{
+        display: flex;
+        justify-content: center;
+    }
+    .imagenes div img{
+        max-width: 20rem;
+    }
 
 }
 @media (min-width: 768px){
@@ -141,6 +159,24 @@ img{
     .info-user .radius h1{
         font-size: 5rem;
     }
+    .info-I{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info-I p{
+        max-width: 54rem;
+        font-size: 4rem;
+        text-align: justify;
+        font-weight: 300;
+    }
+    .imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+    .aboutme h2{
+        padding-top: 10rem;
+        text-align: left;
+    }
 }
 /* **LOGO** */
 .ml9 {
@@ -166,3 +202,5 @@ img{
 .active-nav{
     color: rgba(255, 255, 255, 0.514) !important;
 }
+/* ****ABOUT*****/
+
