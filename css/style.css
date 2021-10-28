@@ -26,15 +26,16 @@ h1{
     color: #fff;
     font-size: 9.5rem;
 }
+img{
+    display: block;
+    width: 100%;
+}
 .navegation{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    padding-top: 3rem !important;
     font-size: 3em;
 }
 .navegation > a{
     margin-right: 2rem;
-    padding-top: 5rem;
     color: #fff;
 }
 .navegation > a:last-child{
@@ -43,22 +44,92 @@ h1{
 .navegation > a:hover{
     color: rgba(255, 255, 255, 0.514);
 }
-.info-user{
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 .radius{
     border-radius: 50%;
-    padding: 3rem;
+    padding: 2rem;
     background-color: #fff;
     border: 2px solid #fff;
 }
-.radius h1{
-    font-size: 8rem;
+.info-user .radius h1{
     color: #000;
+}
+/* **MOBILE FIRS** */
+@media (min-width: 280px){
+    .navegation{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+    }
+    .active{
+        margin: 0;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: visibility 1s  ease-in, opacity 0.5s linear;
+        -moz-transition: visibility 1s  ease-in, opacity 0.5s linear;
+        -o-transition: visibility 1s  ease-in, opacity 0.5s linear;
+        transition: visibility 1s  ease-in, opacity 0.5s linear;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+    .hamburger img{
+        width: 3rem;
+    }   
+    .hamburger img:hover{
+        cursor: pointer;
+    }
+    .navegation > a{
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .info-user{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-title h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .radius{
+        padding: 1rem;
+        text-align: center;
+        max-width: 16rem;
+    }
+    .info-user .radius h1{
+        font-size: 2rem;
+    }
+
+}
+@media (min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+    .navegation{
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        opacity: 1;
+    }
+    .info-user{
+        margin-top: 13rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .radius{
+        max-width: none;
+    }
+    .info-user .radius h1{
+        font-size: 5rem;
+    }
 }
 /* **LOGO** */
 .ml9 {
