@@ -34,5 +34,4 @@ const ActiveSection = () => {
             nav.classList.add('active-nav');
         }
     });
-    console.log(Current);
 }
