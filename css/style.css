@@ -30,6 +30,7 @@ img{
     display: block;
     width: 100%;
 }
+
 .navegation{
     padding-top: 3rem !important;
     font-size: 3em;
@@ -38,9 +39,7 @@ img{
     margin-right: 2rem;
     color: #fff;
 }
-.navegation > a:last-child{
-    margin-right: 0;
-}
+
 .navegation > a:hover{
     color: rgba(255, 255, 255, 0.514);
 }
@@ -107,6 +106,13 @@ img{
 
 }
 @media (min-width: 768px){
+    .fixed-menu{
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: #000;
+    }
     .hamburger{
         display: none;
     }
@@ -116,6 +122,10 @@ img{
         flex-direction: row;
         justify-content: flex-end;
         opacity: 1;
+        width: 95%;
+    }
+    .navegation > a{
+        padding-bottom: 5.5rem;
     }
     .info-user{
         margin-top: 13rem;
@@ -123,6 +133,7 @@ img{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding-top: 8rem;
     }
     .radius{
         max-width: none;
@@ -150,4 +161,8 @@ img{
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
+}
+
+.active-nav{
+    color: rgba(255, 255, 255, 0.514) !important;
 }
