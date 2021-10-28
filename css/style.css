@@ -9,3 +9,74 @@ body{
     font-family: 'Staatliches', cursive;
     font-size: 1.rem;
 }
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.hero{
+    height: 100vh;
+    background-color: #000;
+    opacity: 90%;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: #fff;
+    font-size: 9.5rem;
+}
+.navegation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 3em;
+}
+.navegation > a{
+    margin-right: 2rem;
+    padding-top: 5rem;
+    color: #fff;
+}
+.navegation > a:last-child{
+    margin-right: 0;
+}
+.navegation > a:hover{
+    color: rgba(255, 255, 255, 0.514);
+}
+.info-user{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.radius{
+    border-radius: 50%;
+    padding: 3rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+.radius h1{
+    font-size: 8rem;
+    color: #000;
+}
+/* **LOGO** */
+.ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+} 
+.ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
