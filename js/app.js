@@ -4,7 +4,6 @@ const Navegation = document.querySelector('.navegation');
 document.addEventListener('DOMContentLoaded', () => {
     Hamburger.addEventListener('click', MenuHamburguesa);
 });
-
 // ****FUNCIONES*****
 const MenuHamburguesa = (e) => {
     e.preventDefault();
