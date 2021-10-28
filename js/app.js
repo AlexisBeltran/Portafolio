@@ -3,6 +3,7 @@ const Hamburger = document.querySelector('.hamburger img');
 const Navegation = document.querySelector('.navegation');
 const NavLink = document.querySelectorAll('.navegation a');
 const Section = document.querySelectorAll('section');
+const Menu = document.querySelector('.menu');
 
 document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', ActiveSection);
@@ -26,7 +27,7 @@ const ActiveSection = () => {
         if(scrollY >= SectionTop){
             Current = section.getAttribute('id');
         }
-    });    
+    });  
     NavLink.forEach(nav => {
         nav.classList.remove('active-nav');
         if(nav.classList.contains(Current)){
