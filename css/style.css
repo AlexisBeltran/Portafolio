@@ -33,7 +33,12 @@ img{
     display: block;
     width: 100%;
 }
-
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
 .navegation{
     padding-top: 3rem !important;
     font-size: 3em;
@@ -121,6 +126,11 @@ img{
     .imagenes div img{
         max-width: 20rem;
     }
+    .info-picture{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
 
 }
 @media (min-width: 768px){
@@ -177,6 +187,49 @@ img{
         padding-top: 10rem;
         text-align: left;
     }
+    .img-jobs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }    
+}
+
+/* **PORTAFOLIO** */
+.info-picture{
+    position: relative;
+    overflow: hidden;
+}
+.info-picture img{
+    max-width: 100%;
+    filter: gray; 
+    -webkit-filter: grayscale(1);
+    transition: all .5s ease-in-out;
+}
+.info-picture:hover img{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+.info-picture p{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+.info-picture:hover p{
+    bottom: -80px;
+    opacity: 0px;
 }
 /* **LOGO** */
 .ml9 {
