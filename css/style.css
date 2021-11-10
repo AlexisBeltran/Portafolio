@@ -136,10 +136,12 @@ img{
 @media (min-width: 768px){
     .fixed-menu{
         width: 100%;
-        top: 0;
+        top: -10px;
         left: 0;
         position: fixed;
         background-color: #000;
+        z-index: 1;
+        opacity: 90%;
     }
     .hamburger{
         display: none;
@@ -156,7 +158,7 @@ img{
         padding-bottom: 5.5rem;
     }
     .info-user{
-        margin-top: 13rem;
+        margin-top: 12rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
