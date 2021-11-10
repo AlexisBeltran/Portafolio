@@ -81,6 +81,10 @@ img{
         -o-transition: visibility 1s  ease-in, opacity 0.5s linear;
         transition: visibility 1s  ease-in, opacity 0.5s linear;
     }
+    .fixed-menu{
+        background-color: #000;
+        opacity: 90%;
+    }
     .hamburger{
         display: flex;
         justify-content: center;
