@@ -174,10 +174,10 @@ p{
         width: 95%;
     }
     .navegation > a{
-        padding-bottom: 5.5rem;
+        padding-bottom: 2.5rem;
     }
     .info-user{
-        margin-top: 12rem;
+        margin-top: 9rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

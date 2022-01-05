@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -46,8 +47,14 @@
         <div class="container">
             <h2>Who am i?</h2>
             <div class="info-I">
-                <p>I am a student of Computer Systems. I mainly focus on the front-end of the web site. This is my site where I share all my personal project that I am working on.</p>
-                <div class="imagenes">
+                <p data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">I am a student of Computer Systems. I mainly focus on the front-end of the web site. This is my site where I share all my personal project that I am working on.</p>
+                <div class="imagenes" 
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                >
                     <div><img src="img/html5.png" alt="HTML5" loading="lazy"></div>
                     <div><img src="img/Javascript.png" alt="Javascript" loading="lazy"></div>
                     <div><img src="img/css3.png" alt="Css3" loading="lazy"></div>
@@ -63,7 +70,7 @@
         <div class="container">
             <h2>Portafolio</h2>
             <p>Here are my proyects</p>
-            <div class="img-jobs">
+            <div class="img-jobs" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a class="info-picture" href="https://alexisbeltran.github.io/Casos-Covid/" target="_blank">
                     <img src="img/Casos covid.png" alt="Casos de Covid">
                     <p class="no-margin">Casós de covid</p>
@@ -95,6 +102,10 @@
         </div>
     </section>
 </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="js/logo.js"></script>
     <script src="js/app.js"></script>
